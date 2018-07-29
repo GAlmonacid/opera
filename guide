@@ -2,8 +2,7 @@
 https://vpnssl.ujaen.es/my.policy
 
 # 1. Connect to Opera server
-ssh operator_1@150.214.174.67
-oPera.d4t4
+
 
 # 2. put data
 curl -X POST -H "Content-Type: application/vnd.kafka.json.v2+json" -H "Accept: application/vnd.kafka.v2+json" -H 'content-length: 10' --data '{"records":[{"value":{"RAD":"5.2","temp":"18.2","humid":"3249.32"}}]}' "http://150.214.174.67:8082/topics/curltest/"
